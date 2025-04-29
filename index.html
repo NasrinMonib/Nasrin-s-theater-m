@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head  >
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width , initial-scale=1.0">
+        <title>Nasrin's theater</title>
+        
+        <link rel="stylesheet" href="style.Css">
+        <link href="<link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+
+    </head>
+    <body>
+        <div class="box-model">
+            <header>
+            <h1 class="theater name">&#128151;welcome to the Nasrin's theater&#128151;</h1>
+            &#128512;    &#128516;
+            </header>
+            <main>
+        
+            <section class="screen">
+                <div class="videocontainer">
+            <video id="IMG_5815.MP4" controls  ,>
+                <source src="IMG_5815.MP4" type="video/MP4">
+                Your browser does not support the video tag.
+            </video>
+        </div>
+            </section>
+            <section class="screen">
+                <h2 style="font-family: pscifico;">About the movie-info</h2>
+                <p>the girl on the train
+                    The Girl on the Train is an American psychological thriller film written by Erin Cressida Wilson and directed by Tate Taylor, based on the novel of the same name by British author Paula Hawkins. The film stars Emily Blunt, Rebecca Ferguson, Haley Bennett, Justin Theroux, Luke Evans, and Edgar Ramirez
+                </p>
+            </section>
+            <div class="controls">
+                <button onclick="playAgain()">play Again</button>
+                <button onclick="RateMovie()">RateMovie</button>
+            </div>
+        </section>
+            </main>
+
+        <script>
+            function playAgain() {
+                const video =document.getElementById(IMG_5815.MP4);
+                Video.currentTime=0;
+                video.play();
+            }
+function RateMovie(){
+    let rating =prompt("RATE THE MOVIE FROM 1TO5STARS!");
+    if (rating) {
+    alert('Thanks for rating us ${rating}stars!');
+    }
+}
+</script>
+
+        </body>
+</html>
